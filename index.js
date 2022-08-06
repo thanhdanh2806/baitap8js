@@ -39,19 +39,8 @@ function findMinPos() {
         getEle("txtMinPos").innerHTML = "Không có số dương trong mảng"
 }
 
-function findMinPos() {
-    for (var n = [], r = 0; r < numArray.length; r++)
-        numArray[r] > 0 && n.push(numArray[r]);
-    if (n.length > 0) {
-        for (var e = n[0], r = 1; r < n.length; r++)
-            n[r] < e && (e = n[r]);
-        getEle("txtMinPos").innerHTML = "Số dương nhỏ nhất: " + e
-    } else
-        getEle("txtMinPos").innerHTML = "Không có số dương trong mảng"
-}
-
 function findEven() {
-    for (var n = 0, r = 0; r < numArray.length; r++)
+    for (var n = -1, r = 0; r < numArray.length; r++)
         numArray[r] % 2 == 0 && (n = numArray[r]);
     getEle("txtEven").innerHTML = "Số chẵn cuối cùng: " + n
 }
