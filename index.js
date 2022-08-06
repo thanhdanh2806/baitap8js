@@ -97,15 +97,6 @@ function compareNum() {
     getEle("txtCompare").innerHTML = n > r ? "Số dương > Số âm" : n < r ? "Số âm > Số dương" : "Số âm = Số dương"
 }
 
-// document.addEventListener("contextmenu", function(n) {
-//     n.preventDefault()
-// }, !1),
-
-// document.onkeydown = function(n) {
-//     return 123 != (n = n || window.event).keyCode && (!n.ctrlKey || !n.shiftKey || 73 != n.keyCode) && void 0
-// }
-//;
-
 let tagname = document.getElementsByTagName("h2");
 [...tagname].forEach((element) => {
     element.style.color = "red";
