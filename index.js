@@ -56,6 +56,7 @@ function changePosition() {
 }
 
 function sortIncrease() {
+    for (var n = 0; n < numArray.length; n++)
         for (var r = 0; r < numArray.length - 1; r++)
             numArray[r] > numArray[r + 1] && swap(r, r + 1);
     getEle("txtIncrease").innerHTML = "Mảng sau khi sắp xếp: " + numArray
